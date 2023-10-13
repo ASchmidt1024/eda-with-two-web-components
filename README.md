@@ -29,7 +29,7 @@ This repository contains a simple example of an event-driven architecture (EDA) 
    cd event-driven-web-components
    ```
 
-3. Open `main.html` in your preferred browser.
+3. Open `index.html` in your preferred browser.
 
 ## Usage
 
@@ -48,7 +48,7 @@ The project utilizes the EDA pattern with web components. When a user submits a 
 
 ### Files
 
-- `main.html`: Main application entry point.
+- `index.html`: Main application entry point.
 - `user-input.js`: Contains the logic and structure for the `user-input` component.
 - `display-box.js`: Contains the logic and structure for the `display-box` component.
 
