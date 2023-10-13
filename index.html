@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDA with Web Components</title>
+    <!-- Include the component scripts -->
+    <script src="user-input.js" defer></script>
+    <script src="display-box.js" defer></script>
+</head>
+<body>
+
+<user-input></user-input>
+<display-box></display-box>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const userInputComponent = document.querySelector('user-input');
+        const displayBoxComponent = document.querySelector('display-box');
+
+        userInputComponent.addEventListener('userInputSubmit', (event) => {
+            displayBoxComponent.displayText = event.detail;
+        });
+    });
+</script>
+
+</body>
+</html>
