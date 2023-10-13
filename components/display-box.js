@@ -17,6 +17,14 @@ class DisplayBox extends HTMLElement {
         this.shadowRoot.appendChild(displayBoxTemplate.content.cloneNode(true));
     }
 
+    connectedCallback() {
+        const userInputComponent = document.querySelector('user-input');
+        
+        userInputComponent.addEventListener('userInputSubmit', (event) => {
+            this.displayText = event.detail;
+        });
+    }
+
     set displayText(value) {
         this.shadowRoot.getElementById('displayText').textContent = value;
     }

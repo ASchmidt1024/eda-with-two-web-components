@@ -13,16 +13,5 @@
 <user-input></user-input>
 <display-box></display-box>
 
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const userInputComponent = document.querySelector('user-input');
-        const displayBoxComponent = document.querySelector('display-box');
-
-        userInputComponent.addEventListener('userInputSubmit', (event) => {
-            displayBoxComponent.displayText = event.detail;
-        });
-    });
-</script>
-
 </body>
 </html>
